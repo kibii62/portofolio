@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    </header>
+    
+
+    <main>
+        <section id="home">
+            <img src="assets/profile-pic.png" alt="Profile Picture" class="profile-pic">
+            <h1>Welcome to My Portfolio</h1>
+            <p>Hi there, I am Rodgers Kemboi a fullstack developer with a bias in Frontend Development. </p>
+        </section>
+        <section>
+            <h2 id="skills">Skills</h2>
+            <ul>
+                <li><img src="assets/html-5.png" alt="html 5" width="40">HTML</li>
+                <li><img src="assets/css-3.png" alt="css 3" width="40">CSS</li>
+                <li><img src="assets/js.png" alt="javascript" width="40">JavaScript</li>
+                <li><img src="assets/react.png" alt="react js" width="40">React</li>
+                <li><img src="assets/node-js.png" alt="node js" width="40">Node.js</li>
+                <li><img src="assets/vue-js.png" alt="vue js" width="40">Vue.js</li>
+
+            </ul>
+            <button type="button" >Download Resume<img src=assets/download-resume.png alt="download resume" width="30">  </button>
+        </section>
+        <section>
+            <h2 id="projects">Projects</h2>
+            <figure>
+              <img src="assets/attendance-system.png" alt="Attendance System" width="600">
+              <figcaption>Class Attendance Tracking System</figcaption>
+            </figure>
+            <p>This a project crafted from passion for my classroom. It tracks learner attendance vis-a-vis their performance in the assigned areas. The project was piloted in AEF Reuben ECDE centre with 300 learners in pp2. The school was satisfied with the system and they retained for utilization</p>
+            <figure>
+              <img src="assets/clearance-system.png" alt="Clearance System" width="600">
+              <figcaption>Clerance Information Management System</figcaption>
+            </figure>
+            <p>
+This is a web-based application designed to streamline and manage the clearance process within an organization. It allows users to submit, track, and manage clearance requests efficiently. The system provides features such as user authentication, request submission forms, status tracking, and administrative oversight to ensure a smooth clearance workflow.</p>
+        
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <fieldset>
+                <legend>Contact Me</legend>
+            <form action="mailto:kemboirodgers00@gmail.com" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br><br>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+                
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+                
+                <input type="submit" value="Submit">
+            </form>
+            </fieldset>
+        </section>  
+    </main>
+    <footer>
+        <p>&copy;Zion Softwares, 2025</p>
+    </footer>
+
+</body>
+
+
+</html>

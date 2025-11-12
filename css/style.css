@@ -1,0 +1,302 @@
+header{
+    background: linear-gradient(rgb(27, 155, 230));
+    padding: 10px 0;
+}
+nav ul{
+    list-style: none;
+    justify-content: center;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li{
+    margin:0 20px;
+}
+
+nav ul li a{
+    text-decoration: solid;
+    color: white;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover{
+    color: yellowgreen;
+}
+
+/* ----- General layout ----- */
+main {
+  font-family: "Poppins", sans-serif;
+  background: #f8f9fa;
+  color: #333;
+  padding: 50px 20px;
+}
+
+/* ----- Home Section ----- */
+#home {
+  text-align: center;
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #007bff, #00c6ff);
+  color: white;
+  border-radius: 12px;
+  margin-bottom: 60px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+}
+
+#home .profile-pic {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 7px solid white;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  margin-bottom: 20px;
+  transition: transform 0.3s ease;
+}
+
+#home .profile-pic:hover {
+  transform: scale(1.05);
+}
+
+#home h1 {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-style: oblique;
+  color: black;
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+#home p {
+  font-size: 1.1em;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* ----- Skills Section ----- */
+#skills {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 30px;
+  color: #007bff;
+}
+
+section ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  margin-bottom: 40px;
+}
+
+section ul li {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  padding: 20px;
+  width: 130px;
+  text-align: center;
+  font-weight: 600;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+section ul li:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+section ul li img {
+  display: block;
+  margin: 0 auto 10px;
+}
+
+/* ----- Resume Button ----- */
+button {
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 20px;
+  font-size: 1em;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0 auto;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background: #0056b3;
+  transform: scale(1.05);
+}
+
+button img {
+  vertical-align: middle;
+}
+
+/* ----- Projects Section ----- */
+#projects {
+  text-align: center;
+  font-size: 2em;
+  color: #007bff;
+  margin-bottom: 40px;
+}
+
+section#projects {
+  padding: 60px 20px;
+  background-color: #f8f9fa;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+/* Each project container */
+section#projects figure {
+  align-content: center;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  margin: 40px auto;
+  width: 90%;
+  max-width: 700px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+section#projects figure:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+section#projects img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+section#projects figcaption {
+  font-weight: 600;
+  padding: 12px;
+  background-color: #007bff;
+  color: white;
+  font-size: 1.1em;
+  text-align: center;
+}
+
+/* Description paragraphs */
+section#projects p {
+  max-width: 700px;
+  margin: 20px auto;
+  font-size: 1.05em;
+  line-height: 1.6;
+  color: #333;
+  text-align: justify;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+
+/* ----- Contact Section ----- */
+#contact {
+  background: #f8f9fa;
+  padding: 60px 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+  max-width: 800px;
+  margin: 60px auto;
+  font-family: "Poppins", sans-serif;
+}
+
+#contact h2 {
+  text-align: center;
+  font-size: 2em;
+  color: #007bff;
+  margin-bottom: 30px;
+}
+
+/* ----- Fieldset styling ----- */
+#contact fieldset {
+  border: 2px solid #007bff;
+  border-radius: 12px;
+  padding: 30px 30px;
+  background: white;
+}
+
+#contact legend {
+  font-weight: 600;
+  font-size: 1.2em;
+  color: #007bff;
+  padding: 0 10px;
+}
+
+/* ----- Form labels and inputs ----- */
+#contact label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1em;
+  font-family: inherit;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#contact input[type="text"]:focus,
+#contact input[type="email"]:focus,
+#contact textarea:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 8px rgba(0,123,255,0.2);
+  outline: none;
+}
+
+/* ----- Submit button ----- */
+#contact input[type="submit"] {
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 25px;
+  font-size: 1em;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+#contact input[type="submit"]:hover {
+  background: #0056b3;
+  transform: scale(1.05);
+}
+
+
+/* ----- Footer Styling ----- */
+footer {
+  background: #007bff;          /* Blue background to match your accent */
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 1em;
+  margin-top: 50px;
+  box-shadow: 0 -4px 10px rgba(0,0,0,0.1);
+}
+
+footer p {
+  margin: 0;
+}
+
+
+
