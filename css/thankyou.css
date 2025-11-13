@@ -1,0 +1,80 @@
+
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+    body {
+      background: linear-gradient(135deg, #e3fdfd, #cbf1f5, #a6e3e9);
+      font-family: 'Poppins', sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      text-align: center;
+      animation: fadeIn 1s ease-in;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .checkmark {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #4caf50;
+      animation: pop 0.5s ease-out;
+    }
+
+    @keyframes pop {
+      0% { transform: scale(0.5); opacity: 0; }
+      100% { transform: scale(1); opacity: 1; }
+    }
+
+    .checkmark svg {
+      width: 50px;
+      height: 50px;
+      stroke: white;
+      stroke-width: 4;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      fill: none;
+      animation: draw 0.7s ease forwards;
+    }
+
+    @keyframes draw {
+      from { stroke-dasharray: 48; stroke-dashoffset: 48; }
+      to { stroke-dasharray: 48; stroke-dashoffset: 0; }
+    }
+
+    h1 {
+      margin-top: 20px;
+      font-size: 2em;
+      color: #333;
+    }
+
+    p {
+      color: #555;
+      margin: 10px 0 20px;
+      font-size: 1.1em;
+    }
+
+    a {
+      display: inline-block;
+      background: #4caf50;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: all 0.3s ease;
+    }
+
+    a:hover {
+      background: #43a047;
+      transform: translateY(-2px);
+    }
